@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Sticky Navigation Bar */
+header {
+    background-color: #004d66;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures header stays above other content */
+    width: 100%;
+    transition: background-color 0.3s ease-in-out; /* Optional transition for smooth background color change */
+}
+
+/* Navigation Links */
+.navbar {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #f8d043;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    padding-top: 80px; /* Adds space for the sticky header */
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004d66;
+}
+
+/* Flexbox Layout for Content */
+.content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Text and Image Layout */
+.content-text {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.content-image {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image img {
+    width: 100%;
+    max-width: 480px; /* Increased image size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph and Text Formatting */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+strong {
+    font-weight: bold;
+    color: #004d66;
+}
+
+/* Buttons */
+button.btn {
+    background-color: #004d66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.btn:hover {
+    background-color: #f8d043;
+    color: #004d66;
+}
+
+/* Comparison Table */
+.table_container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.comparison-table th {
+    background-color: #004d66;
+    color: #fff;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004d66;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .content-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-text, .content-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .content-image img {
+        max-width: 90%; /* Allow image to be bigger on small screens */
+    }
+
+    .nav-links li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}

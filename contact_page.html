@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="bootstrap1.css">
+    <link rel="stylesheet" href="bootstrap2.css">
+    <link rel="stylesheet" href="bootstrap3.css">
+</head>
+
+<style>
+    .about{
+        height: 550px !important;
+        overflow: hidden;
+        display: flex;
+    }
+    .para{
+        padding-left: 5rem;
+    }
+
+    @media (max-width : 992px) {
+        .about-img{
+            display: flex;
+            flex-direction: column;
+            border-radius: 50% !important;
+        }
+
+        .about-para{
+            width: 100% !important;
+        }
+
+        .about-name{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width : 571px) {
+        .about-img{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0% !important;
+            justify-content: center;
+        }
+
+        .about-para{
+            display: none;
+            font-size: 14px;
+        }
+
+        .about-name{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width : 446px) {
+        .about-img{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 0% !important;
+            justify-content: center;
+        }
+
+        .about{
+            height: 550px !important;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-para{
+            display: none !important;
+        }
+
+        .about-name{
+            font-size: 8px;
+        }
+    }
+
+    img {
+        transition: outline 0.8s ease-in-out;
+        filter: none; /* Remove grayscale filter */
+    }
+
+    img:hover {
+        outline: solid 20px lightgreen;
+        transition: outline 0.8s ease-in-out;
+    }
+
+</style>
+
+<body>
+    <section class="container-fluid bg-black bg-gradient min-vh-100">
+        <div class="row ">
+            <div class="col-5 d-flex">
+                <a class="d-flex text-decoration-none" href="renewable_homepage.html">
+                    <button class="btn text-white"> 
+                        <i class="bi bi-arrow-left-circle-fill"> </i> 
+                        <span class="ms-3">Back</span>
+                    </button>
+                </a>
+            </div>
+            <div class="col-7 d-flex">
+                <h1 class="text-center text-white mt-5 mb-5"><b>Our Team Leaders</b></h1>
+            </div>
+        </div>
+
+        <section class="container-fluid about">
+            <div class="row about-img align-items-center">
+                <div class="col-xl-5 col-sm-3 col-lg-3 col-md-3 col-md-4">
+                    <img src="Prashant.jpg" class="w-75 shadow rounded-circle mb-md-4 ms-5 about-img" alt="">
+                </div>
+                <div class="col-xl-7 col-sm-9 col-md-9 col-lg-9 text-sm-center text-lg-start para">
+                    <h3 class="text-white mt-sm-3 text-uppercase">Prashant Kumar
+                        <small class="text-white-50 fs-4">
+                            <small class="text-uppercase about-name"> CO-FOUNDER(GREENHUB) AND CEO(Tech Team)</small>
+                        </small> 
+                    </h3>
+                    <p class="text-white-50">Registration ID <b>12419563</b> </p> 
+                    <p class="text-white-50">CSE AI ML</p>
+                    <p class="text-white-50 w-auto lh-5 about-para text-uppercase d-lg-block d-md-none d-sm-none d-xs-none">
+                        <small>
+                            My name is Prashant, and I am introducing myself as a highly motivated and skilled student. Currently, I am actively engaged in computer science & practical lessons While also learning the ropes about new ways and technologies required to fully utilize renewable energy
+                        </small>
+                    </p>
+                    <a href="mailto:kumarprashant05032006@gmail.com">
+                        <button class="btn btn-dark">
+                            <span class="me-2">Reach Me</span> <i class="bi bi-arrow-right-circle-fill"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid about mb-5">
+            <div class="row about-img align-items-center">
+                <div class="col-xl-5 col-sm-3 col-lg-3 col-md-3 col-md-4">
+                    <img src="SUMIT.jpg" class="w-75 shadow rounded-circle mb-md-4 ms-5 about-img" alt="">
+                </div>
+                <div class="col-xl-7 col-sm-9 col-md-9 col-lg-9 text-sm-center text-lg-start para">
+                    <h3 class="text-white mt-sm-3 text-uppercase">Sumit Mankotia
+                        <small class="text-white-50 fs-4">
+                            <small class="text-uppercase about-name">CO-FOUNDER(GREENHUB) AND CEO(RESEARCH AND DEVELOPEMENT TEAM)</small>
+                        </small> 
+                    </h3>
+                    <p class="text-white-50">Registration ID  <b>12417287</b> </p> 
+                    <p class="text-white-50">BTech CSE</p>
+                    <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercase d-lg-block d-md-none d-sm-none d-xs-none">
+                        <small>
+                            My name is Sumit, and I am introducing myself as a highly motivated and skilled student. Currently, I am actively engaged in front-end DEVELOPEMENT while also researching new ways to implement renewable Energy
+                        </small>
+                    </p>
+                    <a href="http://www.linkedin.com/in/sumit-mankotia">
+                        <button class="btn btn-dark">
+                            <span class="me-2">Reach Me</span> <i class="bi bi-arrow-right-circle-fill"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid about">
+            <div class="row about-img align-items-center">
+                <div class="col-xl-5 col-sm-3 col-lg-3 col-md-3 col-md-4">
+                    <img src="Kaushik.jpg" class="w-75 shadow rounded-circle mb-md-4 ms-5 about-img" alt="">
+                </div>
+                <div class="col-xl-7 col-sm-9 col-md-9 col-lg-9 text-sm-center text-lg-start para">
+                    <h3 class="text-white mt-sm-3 text-uppercase">Kaushik Reddy
+                        <small class="text-white-50 fs-4">
+                            <small class="text-uppercase about-name">CO-FOUNDER(GREENHUB) AND CEO(SOCIAL WELFARE AND FUNDING DEPARTMENT)</small>
+                        </small> 
+                    </h3>
+                    <p class="text-white-50">Registration ID <b>12417204</b></p> 
+                    <p class="text-white-50">BTech CSE</p>
+                    <p class="text-white w-auto text-white-50 lh-5 about-para text-uppercase d-lg-block d-md-none d-sm-none d-xs-none">
+                        <small>
+                            My name is Kaushik, and I am introducing myself as a highly motivated and skilled student. Currently, I am actively engaged in computer science & practical lessons while interacting with people and solving social norms regarding renewable products and also introducing greenhub's innovative ideas to public.
+                        </small>
+                    </p>
+                    <a href="https://www.linkedin.com/in/inkyin-hmwe-4b06b2222/">
+                        <button class="btn btn-dark">
+                            <span class="me-2">Reach Me</span> <i class="bi bi-arrow-right-circle-fill"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

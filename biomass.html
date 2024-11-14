@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomass Energy: Advantages and Disadvantages</title>
+    <link rel="stylesheet" href="biomass.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li>
+                    <a href="javascript:history.back()" class="back-button">
+                        <button class="btn">Back</button>
+                    </a>
+                </li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#advantages">Advantages</a></li>
+                <li><a href="#disadvantages">Disadvantages</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#future">Future</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction" class="section">
+            <h2>What is Biomass Energy?</h2>
+            <div class="container">
+                <div><img src="https://c8.alamy.com/comp/2PF8TE4/biomass-fuel-electricity-generation-diagram-illustration-2PF8TE4.jpg" alt="Biomass Energy Illustration" class="image"></div>
+                <div><p style="font-size: 20px;">Biomass energy is derived from organic materials, such as plants, agricultural waste, and animal waste.
+                    These materials are used to produce energy in the form of electricity, heat, or biofuels. 
+                    Biomass can be converted into energy through processes like burning, fermentation, and conversion to gas or liquids.</p></div>
+            </div>
+        </section>
+        <section id="advantages" class="section">
+            <h2>Advantages of Biomass Energy</h2>
+            <div class="container">
+                <div><img src="https://i.pinimg.com/736x/6e/a6/ba/6ea6bad580bcd7c94adcb42bdb95dc7a.jpg" alt="Advantages of biomass energy" class="image">
+                <div><ul class="advantages-list">
+                    <li><strong>Renewable Resource:</strong> Biomass is a renewable source of energy, as long as the resources are managed sustainably. It can be replenished through plant growth.</li>
+                    <li><strong>Reduces Waste:</strong> Biomass energy can help reduce waste by using organic material that would otherwise end up in landfills.</li>
+                    <li><strong>Carbon Neutral:</strong> Biomass is considered carbon-neutral because the carbon dioxide released during combustion is offset by the carbon absorbed by the plants during their growth.</li>
+                    <li><strong>Energy Security:</strong> Biomass can provide energy independence, reducing reliance on fossil fuels and contributing to national energy security.</li>
+                    <li><strong>Supports Agriculture:</strong> Biomass energy supports the agricultural sector by providing new markets for crops and organic waste products.</li>
+                </ul></div>
+            </div>
+        </section>
+        <section id="disadvantages" class="section">
+            <h2>Disadvantages of Biomass Energy</h2>
+            <ul class="disadvantages-list">
+                <li><strong>Land Use:</strong> Large-scale biomass production requires significant land, which could otherwise be used for food production or natural ecosystems.</li>
+                <li><strong>Air Pollution:</strong> The burning of biomass can release particulate matter, carbon monoxide, and other pollutants that may impact air quality.</li>
+                <li><strong>Deforestation Risk:</strong> If not managed sustainably, biomass production could lead to deforestation, negatively impacting biodiversity and contributing to climate change.</li>
+                <li><strong>High Costs:</strong> The initial investment for setting up biomass power plants and fuel production facilities can be high, making it less competitive compared to fossil fuels.</li>
+                <li><strong>Efficiency Issues:</strong> Biomass energy systems can be less efficient than other forms of energy, especially when considering transportation and processing costs of raw materials.</li>
+            </ul>
+        </section>
+        <section id="applications" class="section">
+            <h2>Applications of Biomass Energy</h2>
+            <p>Biomass energy has a wide range of applications, including:</p>
+            <ul class="applications-list">
+                <li><strong>Electricity Generation:</strong> Biomass is used in power plants to generate electricity by burning organic material to produce steam, which turns turbines.</li>
+                <li><strong>Heating:</strong> Biomass can be burned directly to heat buildings, or it can be converted into pellets or other forms for more efficient heating.</li>
+                <li><strong>Biofuels:</strong> Biomass is used to create biofuels such as ethanol and biodiesel, which can be used in vehicles as a substitute for gasoline or diesel.</li>
+            </ul>
+        </section>
+        <section id="future" class="section">
+            <h2>Future Potential of Biomass Energy</h2>
+            <div class="container">
+                <div><img src="https://media.licdn.com/dms/image/D5612AQFY7jzZxbFECA/article-cover_image-shrink_720_1280/0/1706323291831?e=2147483647&v=beta&t=zjB8eL1sFigv8-VDS8_VBsAN4os_YMfOQZH5b31IQlU" alt="Future of Biomass Energy" class="image"></div>
+                <div><p style="font-size: 20px;">As technology advances, biomass energy has the potential to become a significant contributor to the global energy mix.
+                    Improved efficiency in conversion processes and sustainable resource management could reduce costs and environmental impacts,
+                    making biomass a more competitive and environmentally-friendly energy source.</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Biomass Energy Knowledge Hub
+        <br>Team GREENHUB.All rights Reserved.
+    </footer>
+    <script>
+        // Smooth Scroll for navigation
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

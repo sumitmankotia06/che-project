@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENEWABLE ENERGY</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Smooth scroll for internal links
+        $(document).ready(function(){
+            // Select all links with hashes
+            $("a[href^='#']").on('click', function(event) {
+                // Ensure the link is not empty
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    var hash = this.hash;
+                    // Use jQuery animate() to smooth scroll to the desired section
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);  // 800ms for smooth scroll duration
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Renewables Overview</a></li>
+                <li><a href="contact_page.html" target="_blank">Our Team</a></li>
+                <li><a href="innovation.html">New Technologies</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 style="color:rgb(182, 240, 156);">WELCOME TO THE GREEN HUB</h1>
+                <h3><q style="color: darkorange;">A Significant approach towards cleaner , greener and safer future</q></h3>
+                <h3>Embark on your own journey</h3>
+                <a href="#about" class="cta-btn">Learn More</a>
+            </div>
+        </section>
+    <!-- About Section with Renewable Energy Information -->
+    <section id="about">
+        <div class="container">
+            <div>
+                <img src="https://img.freepik.com/premium-photo/green-energy-blossoming-full-development-increasing-influence-renewable-electricity_954894-62196.jpg" alt="Renewable Energy" style="max-height: 200px; min-width:320px;">
+            </div>
+            <div>
+                <p style="color: rgb(26, 161, 42);font-size: 28px;"><q>A man doesn't need brilliance or genius, all he needs is energy</q></p>
+                <p>Our energy is in proportion to the resistance it meets. We attempt nothing great but from a sense of the difficulties we have to encounter; we persevere in nothing great but from a pride in overcoming them.</p>
+            </div>
+        </div>
+
+        <!-- Why Do We Need Renewable Energy? Section -->
+        <div class="renewable-info">
+            <h2 style="text-align: center; font-size: 2.5rem; color: #1f3c73;">What is Renewable Energy?
+                <br>Why Do We Need It?</h2>
+            <p>Renewable energy is essential for ensuring a sustainable and cleaner future. Unlike fossil fuels, which are finite and contribute to climate change, renewable energy sources are abundant, cleaner, and can help power the world for generations. Here’s why we need renewable energy:</p>
+
+            <!-- Section 1: Environmental Protection -->
+            <div class="renewable-point">
+                <h3>1. Environmental Protection</h3>
+                <p>Renewable energy sources produce little to no greenhouse gas emissions, helping to mitigate climate change and reduce air pollution. They also preserve natural resources, unlike fossil fuels which are finite and cause environmental damage.</p>
+            </div>
+
+            <!-- Section 2: Energy Independence and Security -->
+            <div class="renewable-point">
+                <h3>2. Energy Independence and Security</h3>
+                <p>Relying on local renewable energy sources reduces dependence on foreign energy imports. This increases energy security and resilience, while reducing vulnerability to geopolitical conflicts and supply disruptions.</p>
+            </div>
+
+            <!-- Section 3: Economic Growth and Job Creation -->
+            <div class="renewable-point">
+                <h3>3. Economic Growth and Job Creation</h3>
+                <p>The renewable energy sector is creating new jobs in research, development, manufacturing, and installation, offering long-term savings and economic growth, particularly in rural areas with abundant renewable resources.</p>
+            </div>
+
+            <!-- Section 4: Sustainability for Future Generations -->
+            <div class="renewable-point">
+                <h3>4. Sustainability for Future Generations</h3>
+                <p>Unlike fossil fuels, which are running out, renewable energy sources like wind, solar, and water will last for as long as the Earth does, providing a reliable and sustainable energy solution for future generations.</p>
+            </div>
+
+            <!-- Section 5: Health Benefits -->
+            <div class="renewable-point">
+                <h3>5. Health Benefits</h3>
+                <p>Renewable energy reduces air pollution, improving public health by decreasing respiratory and cardiovascular diseases. It also reduces water usage, unlike fossil fuel plants that consume large amounts of water for cooling.</p>
+            </div>
+
+            <!-- Section 6: Combatting Climate Change -->
+            <div class="renewable-point">
+                <h3>6. Combatting Climate Change</h3>
+                <p>By reducing carbon emissions, renewable energy plays a crucial role in addressing global warming. It helps countries meet international climate goals like the Paris Agreement and is essential for building a sustainable future.</p>
+            </div>
+        </div>
+    </section>
+        <section id="services">
+            <h3>Different types of Renewable Energies</h3>
+            <div id="energy-container">
+                <div class="solar_energy">
+                    <h3><a href="solar_energy.html" style="text-decoration: none;color: darkorange;">Solar Energy</a></h3>
+                    <div><p><a href="solar_energy.html" style="text-decoration: none;"><img src="https://blog.feniceenergy.com/wp-content/uploads/2024/04/Sustainable-Solar-Energy-Growth.jpg" alt="img_not_found"></a></p></div>
+                    <div>
+                        <p>"Solar power is the last energy resource that isn't owned yet - nobody taxes the sun yet.
+                            <br>Every 24 hours, enough sunlight touches the Earth to provide energy for the entire planet for 24 years.
+                            <br>Solar power is going to be essential to meeting growing energy demands while staving off climate change.
+                        </p>
+                    </div>
+                </div>
+                <div class="wind_energy">
+                    <h3 style="font-weight: bolder;"><a href="wind_energy.html" style="text-decoration: none;color: rgb(26, 131, 131);">Wind Energy</a></h3>
+                    <div><p><a href="wind_energy.html"><img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-wind-energy-station-png-image_13373062.png" alt="img_not_found"></a></p></div>
+                    <div>
+                        <p>Wind energy is the process of using wind to generate electricity or mechanical power.
+                            <br> Wind turbines use the kinetic energy of moving air to turn blades that spin a shaft connected to a generator to produce electricity</p>
+                    </div>
+                </div>
+                <div class="hydro">
+                    <h3><a href="hydroelectricity.html" style="text-decoration: none;color: rgb(23, 108, 189);">Hydroelectric Energy</a></h3>
+                    <div><p><a href="hydroelectricity.html" ><img src="https://img.freepik.com/premium-photo/crosssectional-side-view-hydro-turbine_976492-125481.jpg" alt="img_not_found"></a></p></div>
+                    <div>
+                        <p>A hydroelectric turbine is a machine that converts the kinetic and potential energy of water into mechanical energy,
+                            <br> which is then used to generate electricity</p>
+                    </div>
+                </div>
+                <div class="biomass">
+                    <h3><a href="biomass.html" style="text-decoration: none;color: darkgreen;">Biomass</a></h3>
+                    <div>
+                        <a href="biomass.html"><img src="https://png.pngtree.com/png-vector/20240721/ourmid/pngtree-3d-biomass-bonanza-transforming-bio-waste-into-adorable-cartoons-png-image_13182818.png" alt="img_not_found"></a>
+                    </div>
+                    <div>
+                        <p>Biomass energy is a renewable energy source that comes from plants and animals,
+                            <br> and can be used to generate electricity and other products: 
+    
+                            <br>Examples:
+                            <br>Wood, agricultural residues, energy crops, and organic waste from households and industry</p>
+                    </div>
+                </div>
+                <div class="thermal_energy_container">
+                    <div class="Geothermal">
+                        <h3><a href="thermal_energy.html" style="text-decoration: none;color:rgb(87, 19, 19);">Geothermal Energy</a></h3>
+                        <div><p><a href="thermal_energy.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnEU9fIiPMeKjztrYDcyATgS6ahL1YhX08NA&s" alt="img_not_found">
+                            </a>
+                        </p></div>
+                        <div>
+                            <p style="font-size:18px;">Geothermal energy is heat energy that comes from the Earth's core and can be used for a variety of purposes, 
+                                <br>including heating, cooling, and generating electricity</p>
+                        </div>
+                    </div>
+                    <div class="ocean_thermal">
+                        <h3><a href="thermal_energy.html" style="text-decoration: none;color:rgb(96, 14, 96);">Oceanic Thermal Energy</a></h3>
+                        <div>
+                            <a href="thermal_energy.html">
+                                <img src="https://w7.pngwing.com/pngs/677/388/png-transparent-ocean-thermal-energy-conversion-energy-transformation-thermal-energy-angle-text-renewable-energy-thumbnail.png" alt="img_not_found">
+                            </a>
+                        </div>
+                        <div>
+                            <p>Ocean thermal energy conversion (OTEC) is a renewable energy technology 
+                                <br>that uses the temperature difference between the ocean's warm surface water and cold depths to generate electricity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="marine_energy">
+                    <div class="tidal_energy">
+                        <h3><a href="marine_energy.html" style="text-decoration: none;color:rgb(14, 62, 96);">Oceanic Tidal Energy</a></h3>
+                        <div>
+                            <a href="marine_energy.html">
+                                <img src="https://media.licdn.com/dms/image/v2/D4E12AQGtQyeSABFeuQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679755682936?e=2147483647&v=beta&t=ulXgytJ8y6HH5ZKSpDK7gEjBLBbLJry7JSFKXGPMirc" alt="img_not_found">
+                            </a>
+                        </div>
+                        <div>
+                            <p>Tidal energy is a renewable energy source that 
+                            <br>harnesses the natural rise and fall of tides to generate electricity</p>
+                        </div>
+                    </div>
+                    <div class="wave_energy">
+                        <h3><a href="marine_energy.html" style="text-decoration: none;color:rgb(139, 24, 41);">Marine Wave Energy</a></h3>
+                        <div>
+                            <a href="marine_energy.html">
+                                <img src="https://cdn.educba.com/academy/wp-content/uploads/2024/08/Wave-Energy.jpg" alt="img_not_found">
+                            </a>
+                        </div>
+                        <div>
+                            <p>wave power, a form of renewable energy in which electricity is generated by harnessing the up-and-down motion of ocean waves. 
+                                <br>Wave power is typically produced by floating turbine platforms or buoys that rise and fall with the swells.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RENEWABLE ENERGY.
+                <br>Team GREENHUB. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="https://www.instagram.com/greenhub._.team?igsh=MTJtc3c4ZndqZWR2cg==" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

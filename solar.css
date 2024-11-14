@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9ff;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Create space for sticky header and back button */
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Ensure header stays above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+/* Back Button Styling */
+.back-button-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Styling */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 120px; /* Create space to avoid overlap with header and back button */
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits List Styling */
+.benefits-list {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Disadvantages List Styling */
+.disadvantages-list {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffcc00;
+    color: #333;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
+p{
+    font-size: 28px;
+}

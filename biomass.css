@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #00bb70;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.back-button .btn {
+    padding: 10px 20px;
+    background-color: #15792a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.back-button .btn:hover {
+    background-color: #71e184;
+}
+
+/* Main Content Section */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Section Styling */
+.section {
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Two-column Layout for Sections with Image and Text */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container div {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Image Styling */
+.image {
+    width: 100%;
+    max-width: 400px; /* Limiting image size */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Lists Styling */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00bb64;
+    color: white;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Stack image and text vertically for small screens */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .image {
+        max-width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .container div {
+        flex: none;
+        width: 100%;
+    }
+}

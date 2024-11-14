@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Energy: Tidal and Wave Energy</title>
+    <link rel="stylesheet" href="marine.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <button onclick="window.history.back();" class="back-button">Back</button> <!-- Back Button -->
+            <h1>Marine Energy: Tidal and Wave Energy</h1>
+            <!-- Navigation Section -->
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#tidal-energy">Tidal Energy</a></li>
+                    <li><a href="#wave-energy">Wave Energy</a></li>
+                    <li><a href="#advantages">Advantages</a></li>
+                    <li><a href="#disadvantages">Disadvantages</a></li>
+                    <li><a href="#future">Future</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="introduction" class="section">
+            <h2>What is Marine Energy?</h2>
+            <div class="container">
+                <div><img src="https://www.researchgate.net/publication/345330154/figure/fig1/AS:954516652429315@1604585912697/Diagram-of-the-main-types-of-Marine-Renewable-Energy-MRE-technologies-with-from-left.png" alt="Marine Energy" class="image"></div>
+                <div><p>Marine energy refers to the energy derived from the movement of water, specifically from the tides and waves in the ocean. 
+                    <br>It is a form of renewable energy that has the potential to provide a significant amount of clean power. 
+                    <br>Marine energy can be harnessed through technologies such as tidal turbines and wave energy converters,
+                    offering an environmentally friendly alternative to fossil fuels.</p></div>
+                </div>
+        </section>
+
+        <!-- Tidal Energy Section -->
+        <section id="tidal-energy" class="section">
+            <h2>Tidal Energy</h2>
+            <div class="container">
+                <div><img src="https://cdn.educba.com/academy/wp-content/uploads/2024/08/Tidal-Energy.jpg" alt="Tidal Energy" class="image"></div>
+                <div><p>Tidal energy utilizes the rise and fall of ocean tides to generate power. 
+                    <br>The movement of water is captured using turbines that are placed in tidal streams or estuaries. 
+                    <br>The gravitational forces of the moon and the sun cause the tides to ebb and flow, 
+                    <br>making tidal energy a predictable and reliable form of renewable energy. 
+                    <br>It can be harnessed using technologies like tidal barrage systems and underwater turbines.</p></div>
+            </div>
+        </section>
+
+        <!-- Wave Energy Section -->
+        <section id="wave-energy" class="section">
+            <h2>Wave Energy</h2>
+            <div class="container">
+                <div><img src="https://cdn.educba.com/academy/wp-content/uploads/2024/08/Wave-Energy.jpg" alt="Wave Energy" class="image"></div>
+                <div><p>Wave energy is generated from the surface motion of ocean waves. 
+                    <br>Unlike tidal energy, which is driven by gravitational forces, wave energy is created by the wind blowing over the surface of the sea. 
+                    <br>Specialized devices such as oscillating water columns, point absorbers, and attenuators are used to capture the movement of waves and convert it into electricity. 
+                    <br>Wave energy is abundant, but it is less predictable than tidal energy.</p></div>
+            </div>
+        </section>
+
+        <!-- Advantages of Marine Energy Section -->
+        <section id="advantages" class="section">
+            <h2>Advantages of Marine Energy</h2>
+            <ul class="advantages-list">
+                <li><strong>Renewable and Sustainable:</strong> Both tidal and wave energy are renewable sources of energy, with little to no emissions during operation.</li>
+                <li><strong>Predictability:</strong> Tidal energy is highly predictable due to the consistent and regular nature of tides. Wave energy is less predictable but still reliable in many regions.</li>
+                <li><strong>Minimal Land Use:</strong> Marine energy systems typically have minimal land use, with most infrastructure placed offshore.</li>
+                <li><strong>High Energy Potential:</strong> Oceans cover over 70% of the Earth's surface, offering vast potential for energy generation from tides and waves.</li>
+            </ul>
+        </section>
+
+        <!-- Disadvantages of Marine Energy Section -->
+        <section id="disadvantages" class="section">
+            <h2>Disadvantages of Marine Energy</h2>
+            <ul class="disadvantages-list">
+                <li><strong>Environmental Impact:</strong> The construction of marine energy systems can disrupt marine ecosystems, affecting wildlife and fisheries.</li>
+                <li><strong>High Costs:</strong> The initial investment for setting up marine energy infrastructure is high due to the harsh offshore conditions and technological requirements.</li>
+                <li><strong>Maintenance Challenges:</strong> Marine energy systems are exposed to harsh ocean conditions, making maintenance and durability a concern.</li>
+                <li><strong>Limited Locations:</strong> Marine energy systems are best suited to specific locations with suitable tidal and wave conditions, limiting their widespread applicability.</li>
+            </ul>   
+        </section>
+
+        <!-- Future of Marine Energy Section -->
+        <section id="future" class="section">
+            <h2>The Future of Marine Energy</h2>
+            <div class="container">
+                <div><img src="https://kpioceanconnect.com/wp-content/uploads/2023/07/website-header-mobile.jpg" alt="Future of Marine Energy" class="image" style="height: 320px;width: 560px;"></div>
+                <div><p>Marine energy has enormous potential for the future, especially as global demand for renewable energy sources increases.
+                    <br> With ongoing advancements in technology, costs are expected to decrease, and efficiency will improve. 
+                    <br>Tidal and wave energy could become a major part of the global energy mix, helping reduce reliance on fossil fuels and contributing to a more sustainable energy future.</p></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Marine Energy Knowledge Hub
+    </footer>
+
+    <script>
+        // Smooth Scroll for navigation
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
